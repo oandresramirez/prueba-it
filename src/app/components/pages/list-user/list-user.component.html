@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<br />
+<br />
+<div class="container">
+    <div class="row">
+
+        <div class="shadow p-3 mb-3 bg-white rounded">
+            <h4>Lista de usuarios</h4>
+        </div>
+        <div class="shadow p-3 mb-2 bg-white rounded">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre(s)</th>
+                        <th>Apellido(s)</th>
+                        <th>Email</th>
+                        <th>Telefono</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of list_users">
+                        <td>{{ data.nombre }}</td>
+                        <td>{{ data.apellido }}</td>
+                        <td>{{ data.email }}</td>
+                        <td>{{ data.num_telefono }}</td>
+                        <td>{{ data.ciudad }}</td>
+                        <td>{{ data.pais }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+</div>
